@@ -141,16 +141,6 @@ body{
     color: #e85d87;
 }
 
-.fa-chevron-right{
-    font-size: 60px;
-    color: #936a5c;
-}
-.fa-chevron-left{
-    font-size: 60px;
-    color: #936a5c;
-
-}
-
 /* parallex section start here*/
 .textParallex{
     color: #e85d87;
@@ -213,6 +203,7 @@ body{
     body{
         overflow-x: hidden; 
     }
+    
 }
 
 @media (max-width:480px){
@@ -293,6 +284,24 @@ body{
     .about{
         padding: 40px;
     }
+    
+    .fa-chevron-right{
+        font-size: 60px;
+        color: #936a5c;
+    }
+    .fa-chevron-left{
+        font-size: 60px;
+        color: #936a5c;
+    }
+    .fa-chevron-right{
+        font-size: 45px;
+        margin-left: 117px;
+    }
+    
+    .fa-chevron-left{
+        font-size: 45px;
+        margin-right: 117px;
+    }
 }
 
 @media screen and (min-width:769) and (max-width:1024px) {
@@ -308,8 +317,29 @@ body{
     .logo4Image{
         width: 50px;
     }
+    .fa-chevron-right{
+        font-size: 45px;
+        margin-left: 117px;
+    }
+    
+    .fa-chevron-left{
+        font-size: 45px;
+        margin-right: 117px;
+    }
 }
 
 /* MediaQuery end here */
 
 
+.fa-chevron-right{
+    font-size: 60px;
+    color: #936a5c;
+}
+.fa-chevron-left{
+    font-size: 60px;
+    color: #936a5c;
+}
+
+
+
+    
