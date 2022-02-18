@@ -1,6 +1,8 @@
 body{
     padding: 0;
     margin: 0;
+    /* overflow-y: hidden;  */
+  overflow-x: hidden; 
 }
 .fontFamily{
     font-family:"source-code-pro",monospace;
@@ -27,9 +29,10 @@ body{
 }
 .roundImage{
     border-radius: 60%;
-    width: 70px;
-    height: 70px;
-    padding: 10px;
+    width: 60px;
+    height: 60px;
+    /* padding: px; */
+    border: 2px solid #936a5c;
 }
 .bgimg2{
     width: 300px;
@@ -137,6 +140,48 @@ body{
 .logoColor{
     color: #e85d87;
 }
+
+/* parallex section start here*/
+.textParallex{
+    color: #e85d87;
+}
+
+.parallaxone{
+    width: 100%;
+    height: 250px;
+    background-image: url(parallexImg.jfif);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+}
+
+.rating {
+    direction: rtl;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .rating > span {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+  }
+  .rating > span:hover:before,
+  .rating > span:hover ~ span:before {
+     content: "\2605";
+     position: absolute;
+    color:#e85d87;
+  }
+.star{
+    width: 100px;
+    color: #e85d87;
+}
+
+/* parallex section end here*/
+
+
+
 /* media Query start from here */
 
 @media (min-width: 1025) { 
@@ -151,11 +196,12 @@ body{
         margin-left: 30px;
         width: 500px;
     }
-    /* .formRow{
-        padding: 30px
-    } */
     .sectionGrid{
         display: block;
+    }
+    
+    body{
+        overflow-x: hidden; 
     }
 }
 
@@ -164,9 +210,6 @@ body{
         display: flex!important;
         flex-direction: column!important;
         text-align: center;
-    }
-    .formRow{
-        /* margin: 10px; */
     }
     .sectionGrid{
         display: none;
@@ -190,6 +233,11 @@ body{
         /* transform:translateY(-50%),translateX(-50%); */
         width:60%;
     } 
+    
+    body{
+        overflow-x: hidden; 
+    }
+    
 }
 
 @media screen and (min-width:320px) and (max-width:768px) {
@@ -197,9 +245,6 @@ body{
         display: flex!important;
         flex-direction: column!important;
         text-align: center;
-    }
-    .formRow{
-        /* margin: 10px; */
     }
     .sectionGrid{
         display: none;
@@ -212,6 +257,17 @@ body{
         padding: 0px!important;
         width: 300px!important;
     }
+    
+    body{
+        overflow-x: hidden; 
+    }
+    .sliderSection{
+        position:absolute;
+        bottom:13%;
+        left:30%;
+        /* transform:translateY(-50%); */
+        width:40%;
+    }
 }
 
 @media screen and (min-width:320px) and (max-width:768px) {
@@ -219,6 +275,13 @@ body{
         width: 200px;
         height: 200px;
         margin: 100px;
+    }
+    
+    body{
+        overflow-x: hidden; 
+    }
+    .about{
+        padding: 40px;
     }
 }
 
@@ -228,6 +291,15 @@ body{
         height: 100px;
         margin: 100px;
     }
+    body{
+        overflow-x: hidden; 
+    }
+
+    .logo4Image{
+        width: 50px;
+    }
 }
+
+/* MediaQuery end here */
 
 
